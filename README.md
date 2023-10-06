@@ -4,15 +4,17 @@
 
 This repository contains a machine learning project focused on predicting heart failure using a comprehensive dataset.
 
-## Dataset
+## Project Overview
+
+Our goal is to develop a predictive model that can assist in the early identification of individuals at risk of heart failure. To achieve this, we employ machine learning techniques and data analysis learned in the course.
+
+**<u>Checkout our project proposal here to learn more about our goals and motivation: [Link to Proposal](PROPOSAL.md)</u>**
+
+## Project Proposal
 
 We utilize the "Heart Failure Clinical Records" dataset available on Kaggle:
 
 **Dataset Link:** [Heart Failure Clinical Records](https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data)
-
-## Project Overview
-
-Our goal is to develop a predictive model that can assist in the early identification of individuals at risk of heart failure. To achieve this, we employ machine learning techniques and data analysis learned in the course.
 
 ## Repository Structure
 
