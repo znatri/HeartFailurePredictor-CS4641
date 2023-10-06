@@ -37,7 +37,10 @@ Our expected contribution table is as follows:
 | Nicholas Arribasplata | Linear Regression     |
 | Felipe Mairhofer    | Naive Bayes            |
 
-Here is the Gantt Chart detailing the forecast for our development: [Upload and Insert Excel]
+Here is the [Gantt Chart](https://github.com/znatri/HeartFailurePredictor-CS4641/blob/eric-proposal-addGranttChart/assets/GanttChart.xlsx) detailing the forecast for our development:
+
+![Gantt Chart](https://i.imgur.com/yqUN22h.png)
+
 
 ## Proposal Presentation
 
