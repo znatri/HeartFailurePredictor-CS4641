@@ -43,9 +43,7 @@ Here is the [Gantt Chart](https://github.com/znatri/HeartFailurePredictor-CS4641
 
 
 ## Proposal Presentation
-
-[Inset Video Link]
-
+Here is the [Presentation Video](https://www.youtube.com/watch?v=cpREG1BGDAM)
 ## References
 
 1. [CDC - Heart Disease Facts](https://www.cdc.gov/heartdisease/facts.htm#:~:text=About%20695%2C000%20people%20in%20the,Coronary%20Artery%20Disease)
