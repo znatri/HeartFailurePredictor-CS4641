@@ -40,7 +40,7 @@ Our expected contribution table is as follows:
 Here is the Gantt Chart detailing the forecast for our development: [Upload and Insert Excel]
 
 ![Gantt Chart](https://imgur.com/yqUN22h)
-[Download the Excel File]()
+[Download the Excel File](https://github.com/znatri/HeartFailurePredictor-CS4641/blob/eric-proposal-addGranttChart/assets/GanttChart.xlsx)
 
 
 ## Proposal Presentation
