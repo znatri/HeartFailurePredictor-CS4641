@@ -1,6 +1,6 @@
-# HeartFailurePredictor-CS4461
+# HeartFailurePredictor-CS4641
 
-**Machine Learning Project for CS4461 - Predicting Heart Failure**
+**Machine Learning Project for CS4641 - Predicting Heart Failure**
 
 This repository contains a machine learning project focused on predicting heart failure using a comprehensive dataset.
 
@@ -30,8 +30,8 @@ Here's an overview of the repository structure:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/HeartFailurePredictor-CS4461.git
-cd HeartFailurePredictor-CS4461
+git clone https://github.com/your-username/HeartFailurePredictor-CS4641.git
+cd HeartFailurePredictor-CS4641
 ```
 
 2. Follow instructions in `enviornment/enviornment_setup.md` to get project dependencies.
