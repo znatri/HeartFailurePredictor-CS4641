@@ -35,12 +35,12 @@ In comparison, other critical indicators such as 'serum creatinine' contribute a
 
 The interpretation of these findings suggest that patients with more frequent doctor visits, indicated by shorter durations in the 'Time' variable, are at a heightened risk of experiencing heart failure. This observation aligns with the intuitive notion that individuals with a history of recurrent hospitalizations and persistent critical heart conditions may face an elevated susceptibility to heart failure. The emphasis placed on the temporal aspect ('Time') underscores the significance of consistent medical monitoring and underscores the potential correlation between shorter follow-up periods and increased risk of heart-related complications.
 
-![Feature Importance](https://i.imgur.com/Wzgr8d6.png)
+![Confusion Matrix](https://i.imgur.com/Wzgr8d6.png)
 Employing the random forest classifier allowed us to construct a confusion matrix, revealing insights into the model's performance. We observed a higher accuracy in predicting true negatives compared to true positives. The combined count of true negatives and true positives constituted a substantial portion of our sample, indicating a satisfactory predictive capability.
 
 Despite this overall effectiveness, the model did exhibit instances of false negatives and false positives, which had a discernible impact on the accuracy metric. The occurrence of false negatives introduces a challenge, as these instances represent cases where the model failed to identify positive outcomes when they were, in fact, present. It is essential to address and mitigate false negatives to enhance the model's ability to improve the overall accuracy and reliability of the predictive results, but, more importantly, minimize the risk of overlooking the need for immediate medical attention.
 
-![Feature Importance]([https://imgur.com/a/wHFCeIg](https://imgur.com/gallery/f6INnOb))
+![Random Forest Classifier - Accuracy Trends](https://i.imgur.com/ptEsVlS.png)
 The graph above illustrates the robust performance of the random forest classifier, achieving 100% training accuracy with a limited number of trees (12). Testing accuracy exhibited a positive trend with additional trees, signifying effective generalization to new data. The absence of overfitting, demonstrated by the convergence of training and testing accuracy, highlights the model's balanced learning. Despite minor variations in accuracy across runs, the model consistently maintained a commendable testing accuracy range of approximately 0.82 to 0.87. Overall, these results validate the classifier's reliability and effectiveness in heart failure prediction.
 
 
