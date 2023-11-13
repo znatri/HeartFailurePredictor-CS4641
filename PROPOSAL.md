@@ -27,7 +27,7 @@ As far as results, we were focusing on Accuracy and Precision as our two key met
 In our data pre-processing phase, we employed the `StandardScaler` from the scikit-learn library to standardize the features in our dataset. Standardization involves transforming the data such that it has a mean of 0 and a standard deviation of 1. This step is crucial, especially when working with the random forest algorithm, which is sensitive to the scale of input features.
 To assess the performance of our model, we partitioned our dataset into two subsets: 85% for training and 15% for testing. This division ensures that the model is trained on a majority of the data, allowing it to learn patterns and relationships. The remaining 15% is reserved for testing, providing an independent dataset to evaluate how well the model generalizes to new, unseen data. This approach helps us gauge the model's performance on real-world scenarios beyond the training set, allowing for a more robust assessment of its predictive capabilities.
 
-![Feature Importance](https://i.imgur.com/h7toqm5.png))
+![Feature Importance](https://i.imgur.com/h7toqm5.png)
 
 Based on the insights derived from the 'Feature Importance Bar Chart,' it is evident that the variable 'Time,' representing the follow-up period in days, plays a pivotal role in assessing the risk of heart failure. The feature importance analysis reveals that 'Time' holds a significant weight of approximately 30%, making it the most influential factor in the predictive model.
 
@@ -35,7 +35,7 @@ In comparison, other critical indicators such as 'serum creatinine' contribute a
 
 The interpretation of these findings suggest that patients with more frequent doctor visits, indicated by shorter durations in the 'Time' variable, are at a heightened risk of experiencing heart failure. This observation aligns with the intuitive notion that individuals with a history of recurrent hospitalizations and persistent critical heart conditions may face an elevated susceptibility to heart failure. The emphasis placed on the temporal aspect ('Time') underscores the significance of consistent medical monitoring and underscores the potential correlation between shorter follow-up periods and increased risk of heart-related complications.
 
-![Feature Importance]([https://imgur.com/a/wHFCeIg](https://imgur.com/gallery/f6INnOb))
+![Feature Importance](https://i.imgur.com/Wzgr8d6.png)
 Employing the random forest classifier allowed us to construct a confusion matrix, revealing insights into the model's performance. We observed a higher accuracy in predicting true negatives compared to true positives. The combined count of true negatives and true positives constituted a substantial portion of our sample, indicating a satisfactory predictive capability.
 
 Despite this overall effectiveness, the model did exhibit instances of false negatives and false positives, which had a discernible impact on the accuracy metric. The occurrence of false negatives introduces a challenge, as these instances represent cases where the model failed to identify positive outcomes when they were, in fact, present. It is essential to address and mitigate false negatives to enhance the model's ability to improve the overall accuracy and reliability of the predictive results, but, more importantly, minimize the risk of overlooking the need for immediate medical attention.
