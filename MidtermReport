@@ -1,3 +1,5 @@
+
+
 As far as results, we were focusing on Accuracy and Precision as our two key metrics.
 
 Based on the insights derived from the 'Feature Importance Bar Chart,' it is evident that the variable 'Time,' 
@@ -16,8 +18,6 @@ conditions may face an elevated susceptibility to heart failure. The emphasis pl
 underscores the significance of consistent medical monitoring and underscores the potential correlation between 
 shorter follow-up periods and increased risk of heart-related complications.
 
-
-
 Employing the random forest classifier allowed us to construct a confusion matrix, revealing insights into the 
 model's performance. We observed a higher accuracy in predicting true negatives compared to true positives. The 
 combined count of true negatives and true positives constituted a substantial portion of our sample, indicating a 
@@ -29,7 +29,6 @@ instances represent cases where the model failed to identify positive outcomes w
 is essential to address and mitigate false negatives to enhance the model's ability to improve the overall accuracy 
 and reliability of the predictive results, but, more importantly, minimize the risk of overlooking the need for 
 immediate medical attention.
-
 
 The graph above illustrates the robust performance of the random forest classifier, achieving 100% training accuracy 
 with a limited number of trees (12). Testing accuracy exhibited a positive trend with additional trees, signifying 
