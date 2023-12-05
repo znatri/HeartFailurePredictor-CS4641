@@ -90,7 +90,7 @@ Additionally, our dataset size, compared to other datasets, is relatively smalle
 
 ![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
 
-In the above visualization one can see the true values compared to the models predictions. The blue and salmon colored points are values that the model predicted wrong, while the fuchsia points are the correctly predicted points. As one can see there are more fuchsia points in the 0 value, this shows that the model predicts true negatives better than true positives.
+In the visualization presented, the comparison between the true values and the model's predictions is depicted. The scatter plot distinguishes between different point colors: blue and salmon represent values the model predicted incorrectly, while fuchsia denotes correctly predicted points. Notably, a higher concentration of fuchsia points appears within the 0 value, indicating the model's superior ability to predict true negatives over true positives. This observation suggests a tendency for the model to perform better in identifying instances of true negatives compared to true positives.
 
 ### Logistic Regression
 
