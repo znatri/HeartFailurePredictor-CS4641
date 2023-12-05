@@ -84,6 +84,10 @@ Despite this overall effectiveness, the model did exhibit instances of false neg
 
 ![Naive Bayes Accuracy, Recall, F1-score, Precision](https://i.imgur.com/SxZ0hAT.png)
 
+The plotted statistics above represent key metrics for the Naive Bayes model, offering valuable insights into its performance. Notably, these metrics underscore the model's ability to accurately predict most cases. However, it's important to note the observed variability in these metrics across different runs, showing an accuracy range between 72% to 88%. This variability can be attributed, in part, to the diverse testing data employed in each rerun, influencing the model's performance consistency.
+
+Additionally, our dataset size, compared to other datasets, is relatively smaller. This limited data volume could potentially contribute to the observed variability in accuracy. A larger dataset might offer a more comprehensive representation of the underlying patterns, potentially enhancing the model's robustness and accuracy.
+
 ![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
 
 ### Logistic Regression
