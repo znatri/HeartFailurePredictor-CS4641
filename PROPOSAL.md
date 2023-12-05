@@ -172,7 +172,7 @@ Our updated contribution table is as follows:
 
 Here is the [Gantt Chart](https://github.com/znatri/HeartFailurePredictor-CS4641/blob/eric-proposal-addGranttChart/assets/GanttChart.xlsx) detailing the forecast for our development:
 
-![Gantt Chart]([https://i.imgur.com/yqUN22h](https://imgur.com/gallery/xM3hD6U).png)
+![Gantt Chart](https://i.imgur.com/yqUN22h.png)
 
 
 ## Proposal Presentation
