@@ -72,6 +72,13 @@ The new confusion matrix provides a clearer picture of the model's predictive ca
 
 In summary, the integration of outlier handling, class imbalance correction, and hyperparameter tuning significantly boosted our model's accuracy and predictive reliability. These enhancements allowed for a more nuanced understanding of the factors influencing heart failure, leading to a more dependable tool for medical professionals in their diagnostic processes.
 
+### Naive Bayes
+
+![Naive Bayes Confusion Matrix](https://i.imgur.com/znNMKMn.png)
+
+![Naive Bayes Accuracy, Recall, F1-score, Precision](https://i.imgur.com/SxZ0hAT.png)
+
+![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
 
 ## Project Timeline
 
