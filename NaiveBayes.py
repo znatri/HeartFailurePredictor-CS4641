@@ -67,3 +67,13 @@ sns.barplot(x=labels, y=scores, palette='muted')
 plt.ylim(0, 1)
 plt.title('Precision, Recall, and F1-score')
 plt.show()
+
+# Scatter Plot for True Values and Predictions
+plt.figure(figsize=(8, 6))
+plt.scatter(range(len(target_test)), target_test, color='blue', label='True Values', alpha=0.5)
+plt.scatter(range(len(target_predict)), target_predict, color='red', label='Predictions', alpha=0.5)
+plt.xlabel('Data Points')
+plt.ylabel('Values')
+plt.title('True Values vs Predictions')
+plt.legend()
+plt.show()
