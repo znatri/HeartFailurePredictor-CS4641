@@ -120,6 +120,7 @@ On the other hand, 'Serum Creatinine' shows a positive relationship with heart f
 
 In summary, 'Time' emerges as the most significant variable, with a substantial negative impact on heart risk, while 'Ejection Fraction' has a negative impact, and 'Serum Creatinine' has a positive impact on the likelihood of heart failure.
 
+![Accuracy Trends](https://i.imgur.com/0wZdPpP.png)
 
 ## Project Timeline
 
