@@ -74,7 +74,9 @@ In summary, the integration of outlier handling, class imbalance correction, and
 
 ### Naive Bayes
 
-![Naive Bayes Confusion Matrix](https://i.imgur.com/znNMKMn.png)
+Naive Bayes is another machine learning models we chose for predicting heart failure. As a supervised learning algorithm, Naive Bayes operates on the principles of Bayes Theorem to classify data based on the probability of certain events occurring given prior knowledge. Naive Bayes assumes independence among features, which is not very common in real world scenarios, especially heart failures. Despite this oversimplified assumption, Naive Bayes is particularly good at handling a large number of features relative to the dataset size and is computationally efficient, making it suitable for real-time predictions.
+
+![Naive Bayes Confusion Matrix](https://i.imgur.com/znNMKMn.png) 
 
 ![Naive Bayes Accuracy, Recall, F1-score, Precision](https://i.imgur.com/SxZ0hAT.png)
 
