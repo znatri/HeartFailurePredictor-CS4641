@@ -104,6 +104,10 @@ The model did exhibit instances of false negatives and false positives, which ha
 
 ![Model Metrics](https://i.imgur.com/an8RDYg.png)
 
+The statistics above represent metrics for the Logistic Regression model. These metrics offer key insights into the model's ability to accurately predict. However, it's important to note the observed variability in these metrics across different runs, showing an accuracy range between x% to y%. This variability can be attributed, in part, to the diverse testing data employed in each rerun, influencing the model's performance consistency.
+
+Our dataset size is relatively smaller, which could potentially contribute to the observed variability in accuracy.
+
 ![Coefficients](https://i.imgur.com/xfO7rkb.png)
 
 In the image, the coefficients for 'Time,' 'Ejection Fraction,' and 'Serum Creatinine' have magnitudes of -1.5, -0.7, and 0.7, respectively.
