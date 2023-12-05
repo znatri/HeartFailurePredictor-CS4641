@@ -87,7 +87,7 @@ Despite this overall effectiveness, the model did exhibit instances of false neg
 ![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
 
 ## Logistic Regression
-![LR Confusion Matrix](https://imgur.com/BgpBGRm.png)
+![LR Confusion Matrix](https://i.imgur.com/BgpBGRm.png)
 
 ## Project Timeline
 
