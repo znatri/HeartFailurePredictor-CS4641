@@ -128,7 +128,7 @@ Our updated contribution table is as follows:
 | Name                  | Assigned Portion       |
 |-----------------------|------------------------|
 | Azhan Khan            | Random Forest          |
-| Hardik Goel           | Project Logistics      |
+| Hardik Goel           | Support Vector Machine |
 | Eric Vela             | Project Logistics      |
 | Nicholas Arribasplata | Logistic Regression    |
 | Felipe Mairhofer      | Naive Bayes            |
