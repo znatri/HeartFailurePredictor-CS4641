@@ -102,6 +102,8 @@ Employing the logistic regression model allowed us to construct a confusion matr
 
 The model did exhibit instances of false negatives and false positives, which had a negligible impact on the accuracy metric. These occurrences introduce a challenge, as they represent cases where the model failed to identify positive outcomes when they were, in fact, present.
 
+![Model Metrics](https://i.imgur.com/an8RDYg.png)
+
 ![Coefficients](https://i.imgur.com/xfO7rkb.png)
 
 In the image, the coefficients for 'Time,' 'Ejection Fraction,' and 'Serum Creatinine' have magnitudes of -1.5, -0.7, and 0.7, respectively.
