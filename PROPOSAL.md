@@ -124,6 +124,40 @@ In summary, 'Time' emerges as the most significant variable, with a substantial 
 
 The graph above illustrates the robust performance of the logistic regression model, achieving 93% training accuracy as the regularization strength increases. Testing accuracy exhibited a positive trend, signifying effective generalization to new data. Despite minor variations in accuracy across runs, the model consistently maintained a commendable testing accuracy range of approximately 0.91 to 0.93. Overall, these results validate the model’s reliability and effectiveness in heart failure prediction.
 
+### Support Vector Machine
+
+The Support Vector Machine (SVM) model, a powerful and versatile machine learning algorithm, is applied to predict heart failure events in patients. SVM works on the principle of finding a hyperplane that best separates the classes. Unlike linear models that solely focus on the decision boundary, SVM also considers the margin maximization, making it more robust to overfitting, especially in high-dimensional spaces.
+
+The confusion matrix below illustrates the SVM's predictive performance on our test dataset. It demonstrates an impressive ability to predict true negatives – patients not experiencing heart failure – while somewhat underperforming in correctly identifying true positives. This model's predictive accuracy shows that, despite the challenges inherent in predicting complex medical events, our SVM model is able to identify patients at risk with relatively high reliability.
+
+![Confusion Matrix](assets/visualizations/SVM_ConfusionMatrix.png)
+
+
+- **True Negatives (TN)**: The model correctly predicted 'no heart failure' 33 times.
+- **False Positives (FP)**: The model incorrectly predicted 'heart failure' 2 times when it did not occur.
+- **False Negatives (FN)**: The model incorrectly predicted 'no heart failure' 10 times when it did occur.
+- **True Positives (TP)**: The model correctly predicted 'heart failure' 15 times.
+
+From the confusion matrix data, the number of true negatives is high (33), indicating that the model is indeed quite successful at identifying patients who are not experiencing heart failure. Moreover, the number of true positives (15) in comparison to false negatives (10) shows that the model is less successful at identifying true heart failure events.
+
+The classification report further substantiates our observations:
+
+![Classification report observations](assets/visualizations/SVM_result.png)
+
+The metrics showcase an excellent precision for true positives, indicating when the model predicts a heart failure event; it is correct most of the time. However, the recall for heart failure events is modest, suggesting that the model tends to miss some true positive cases. In medical contexts, where missing an actual event can be critically risky, this calls for further model tuning or possibly combining SVM with other models to improve recall.
+
+![Receiver Operating Characteristic (ROC) Curve](assets/visualizations/SVM_ROC_Curve.png)
+
+The Receiver Operating Characteristic (ROC) curve and the area under the curve (AUC) at 0.83 inform us about the model's trade-off between sensitivity and specificity. An AUC close to 1 indicates a model with high ability to distinguish between patients with and without the event, and our SVM's performance is commendable in this respect.
+
+![Precision-Recall Curve](assets/visualizations/SVM_Precision-Recall_Curve.png)
+
+The Precision-Recall Curve is particularly informative for imbalanced datasets, as it directly shows the trade-off between precision and the true positive rate. The curve of our model is a testament to its capability to maintain a balance between precision and recall throughout various decision thresholds.
+
+Our rigorous approach included hyperparameter tuning through stratified k-fold cross-validation and an expansive grid search over various values of 'C', 'gamma', and different kernels, including 'rbf', 'poly', and 'sigmoid'. The optimal parameters found were `{'C': 1000000.0, 'gamma': 0.001, 'kernel': 'sigmoid'}`. Despite our efforts in hyperparameter tuning, the model's accuracy remained around 80%, indicating the possible complexity and noise in the clinical data, which sets a natural performance cap for prediction models.
+
+In conclusion, while the SVM model shows promise, particularly in predicting true negatives with high precision, there is room for improvement in its recall for heart failure events. As a future direction, ensemble methods, more complex feature engineering, or deep learning approaches could be employed to enhance the model's sensitivity to true positive cases.
+
 ## Project Timeline
 
 Our updated contribution table is as follows:
