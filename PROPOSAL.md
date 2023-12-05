@@ -98,7 +98,7 @@ Logistic Regression, a widely adopted supervised learning algorithm, is employed
 
 ![Confusion Matrix](https://i.imgur.com/DX0Ga5T.png)
 
-Employing the logistic regression model allowed us to construct a confusion matrix, revealing insights into the model's performance. We observed a higher accuracy in predicting true negatives compared to true positives. The combined count of true negatives and true positives constituted a substantial portion of our sample, indicating a satisfactory predictive capability.
+The confusion matrix above, revealed key insights into the model's performance. We observed a higher accuracy in predicting true negatives compared to true positives. The combined count of true negatives and true positives constituted a substantial portion of our sample, indicating a satisfactory predictive capability.
 
 The model did exhibit instances of false negatives and false positives, which had a negligible impact on the accuracy metric. These occurrences introduce a challenge, as they represent cases where the model failed to identify positive outcomes when they were, in fact, present.
 
@@ -110,7 +110,7 @@ Our dataset size is relatively smaller, which could potentially contribute to th
 
 ![Coefficients](https://i.imgur.com/xfO7rkb.png)
 
-In the image, the coefficients for 'Time,' 'Ejection Fraction,' and 'Serum Creatinine' have magnitudes of -1.5, -0.7, and 0.7, respectively.
+In the image above, the coefficients for 'Time,' 'Ejection Fraction,' and 'Serum Creatinine' have magnitudes of -1.5, -0.7, and 0.7, respectively.
 
 The 'Time' variable, representing the follow-up period in days, exhibits a negative correlation with heart risk. As the duration between doctor visits increases, there is a corresponding decrease in the likelihood of heart risk. This negative correlation is intuitively understandable, as extended intervals between medical check-ups may indicate a lower risk of heart issues.
 
@@ -121,6 +121,8 @@ On the other hand, 'Serum Creatinine' shows a positive relationship with heart f
 In summary, 'Time' emerges as the most significant variable, with a substantial negative impact on heart risk, while 'Ejection Fraction' has a negative impact, and 'Serum Creatinine' has a positive impact on the likelihood of heart failure.
 
 ![Accuracy Trends](https://i.imgur.com/0wZdPpP.png)
+
+The graph above illustrates the robust performance of the logistic regression model, achieving 93% training accuracy as the regularization strength increases. Testing accuracy exhibited a positive trend, signifying effective generalization to new data. Despite minor variations in accuracy across runs, the model consistently maintained a commendable testing accuracy range of approximately 0.91 to 0.93. Overall, these results validate the model’s reliability and effectiveness in heart failure prediction.
 
 ## Project Timeline
 
