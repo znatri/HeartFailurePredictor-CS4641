@@ -93,6 +93,18 @@ Employing the logistic regression model allowed us to construct a confusion matr
 
 The model did exhibit instances of false negatives and false positives, which had a negligible impact on the accuracy metric. These occurrences introduce a challenge, as they represent cases where the model failed to identify positive outcomes when they were, in fact, present.
 
+![Coefficients](https://i.imgur.com/xfO7rkb.png)
+
+In the image, the coefficients for 'Time,' 'Ejection Fraction,' and 'Serum Creatinine' have magnitudes of -1.5, -0.7, and 0.7, respectively.
+
+The 'Time' variable, representing the follow-up period in days, exhibits a negative correlation with heart risk. As the duration between doctor visits increases, there is a corresponding decrease in the likelihood of heart risk. This negative correlation is intuitively understandable, as extended intervals between medical check-ups may indicate a lower risk of heart issues.
+
+Regarding 'Ejection Fraction,' an increase in this variable, which signifies the percentage of blood leaving the heart during each contraction, is associated with a decreased likelihood of heart failure risk. This observation may be attributed to patients potentially having lower heart rates, and this decrease in heart rate appears to have a favorable impact on their overall heart health.
+
+On the other hand, 'Serum Creatinine' shows a positive relationship with heart failure risk. As the level of serum creatinine in the blood rises, the risk of heart failure also increases. This positive correlation suggests that higher levels of serum creatinine may be indicative of an elevated risk of heart-related issues.
+
+In summary, 'Time' emerges as the most significant variable, with a substantial negative impact on heart risk, while 'Ejection Fraction' has a negative impact, and 'Serum Creatinine' has a positive impact on the likelihood of heart failure.
+
 
 ## Project Timeline
 
