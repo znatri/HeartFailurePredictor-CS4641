@@ -89,6 +89,11 @@ Despite this overall effectiveness, the model did exhibit instances of false neg
 ## Logistic Regression
 ![LR Confusion Matrix](https://i.imgur.com/BgpBGRm.png)
 
+Employing the logistic regression model allowed us to construct a confusion matrix, revealing insights into the model's performance. We observed a higher accuracy in predicting true negatives compared to true positives. The combined count of true negatives and true positives constituted a substantial portion of our sample, indicating a satisfactory predictive capability.
+
+The model did exhibit instances of false negatives and false positives, which had a negligible impact on the accuracy metric. These occurrences introduce a challenge, as they represent cases where the model failed to identify positive outcomes when they were, in fact, present.
+
+
 ## Project Timeline
 
 Our expected contribution table is as follows:
