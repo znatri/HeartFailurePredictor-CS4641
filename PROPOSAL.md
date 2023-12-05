@@ -119,15 +119,15 @@ In summary, 'Time' emerges as the most significant variable, with a substantial 
 
 ## Project Timeline
 
-Our expected contribution table is as follows:
+Our updated contribution table is as follows:
 
-| Name                | Assigned Portion       |
-|---------------------|------------------------|
-| Azhan Khan          | Decision Trees         |
-| Hardik Goel         | Random Forest          |
-| Eric Vela           | Support Vector Machines|
-| Nicholas Arribasplata | Logistic Regression  |
-| Felipe Mairhofer    | Naive Bayes            |
+| Name                  | Assigned Portion       |
+|-----------------------|------------------------|
+| Azhan Khan            | Random Forest          |
+| Hardik Goel           | Project Logistics      |
+| Eric Vela             | Project Logistics      |
+| Nicholas Arribasplata | Logistic Regression    |
+| Felipe Mairhofer      | Naive Bayes            |
 
 Here is the [Gantt Chart](https://github.com/znatri/HeartFailurePredictor-CS4641/blob/eric-proposal-addGranttChart/assets/GanttChart.xlsx) detailing the forecast for our development:
 
