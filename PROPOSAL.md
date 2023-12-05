@@ -87,7 +87,7 @@ Despite this overall effectiveness, the model did exhibit instances of false neg
 ![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
 
 ## Logistic Regression
-![Logistic Regression Confusion Matrix](https://i.imgur.com/a/XLazO4L.png)
+![LR Confusion Matrix](https://i.imgur.com/mZkBwUO.png)
 
 ## Project Timeline
 
@@ -98,7 +98,7 @@ Our expected contribution table is as follows:
 | Azhan Khan          | Decision Trees         |
 | Hardik Goel         | Random Forest          |
 | Eric Vela           | Support Vector Machines|
-| Nicholas Arribasplata | Linear Regression     |
+| Nicholas Arribasplata | Logistic Regression  |
 | Felipe Mairhofer    | Naive Bayes            |
 
 Here is the [Gantt Chart](https://github.com/znatri/HeartFailurePredictor-CS4641/blob/eric-proposal-addGranttChart/assets/GanttChart.xlsx) detailing the forecast for our development:
