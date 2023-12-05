@@ -23,6 +23,7 @@ We plan to use a number of supervised and unsupervised Machine Learning algorith
 
 ## Results
 
+Random Forest
 As far as results, we were focusing on Accuracy and Precision as our two key metrics.
 
 In our initial data pre-processing phase, we employed the `StandardScaler` from the scikit-learn library to standardize the features in our dataset. Standardization involves transforming the data such that it has a mean of 0 and a standard deviation of 1. This step is crucial, especially when working with the random forest algorithm, which is sensitive to the scale of input features.
