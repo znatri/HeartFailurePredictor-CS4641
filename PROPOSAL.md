@@ -78,6 +78,10 @@ Naive Bayes is another machine learning models we chose for predicting heart fai
 
 ![Naive Bayes Confusion Matrix](https://i.imgur.com/znNMKMn.png) 
 
+Running the Naive Bayes model allowed us to construct a confusion matrix, revealing insights into the model's performance. We observed a higher accuracy in predicting true negatives compared to true positives. Together, the count of true negatives and true positives formed a substantial portion of our sample, indicating a satisfactory predictive capability. However, compared to other models we used, such as Random forest classifier, this model didnt not perform as well.
+
+Despite this overall effectiveness, the model did exhibit instances of false negatives and false positives. The occurrence of false negatives introduces a challenge, as these instances represent cases where the model failed to identify positive outcomes when they were, in fact, present. It is essential to address and mitigate false negatives to enhance the model's ability to improve the overall accuracy and reliability of the predictive results, but, more importantly, minimize the risk of overlooking the need for immediate medical attention.
+
 ![Naive Bayes Accuracy, Recall, F1-score, Precision](https://i.imgur.com/SxZ0hAT.png)
 
 ![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
