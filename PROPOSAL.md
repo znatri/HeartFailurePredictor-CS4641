@@ -104,7 +104,7 @@ The model did exhibit instances of false negatives and false positives, which ha
 
 ![Model Metrics](https://i.imgur.com/an8RDYg.png)
 
-The statistics above represent metrics for the Logistic Regression model. These metrics offer key insights into the model's ability to accurately predict. However, it's important to note the observed variability in these metrics across different runs, showing an accuracy range between x% to y%. This variability can be attributed, in part, to the diverse testing data employed in each rerun, influencing the model's performance consistency.
+The statistics above represent metrics for the Logistic Regression model. These metrics offer key insights into the model's ability to accurately predict. However, it's important to note the observed variability in these metrics across different runs, showing an accuracy range between 91% to 93%. This variability can be attributed, in part, to the diverse testing data employed in each rerun, influencing the model's performance consistency.
 
 Our dataset size is relatively smaller, which could potentially contribute to the observed variability in accuracy.
 
