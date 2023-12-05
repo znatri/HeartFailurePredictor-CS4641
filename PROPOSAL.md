@@ -87,6 +87,11 @@ Despite this overall effectiveness, the model did exhibit instances of false neg
 ![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
 
 ## Logistic Regression
+
+Logistic Regression, a widely adopted supervised learning algorithm, is employed for predicting outcomes, including the likelihood of heart failure. Unlike Naive Bayes, which leverages Bayes' Theorem, Logistic Regression utilizes the logistic function to model probabilities within a binary outcome. In our case, whether a patient is at risk of heart failure or not.
+
+Efficient and interpretable, Logistic Regression handles a moderate number of features, making it well-suited for real-time predictions and situations where understanding the impact of individual features on the outcome is essential.
+
 ![Confusion Matrix](https://i.imgur.com/DX0Ga5T.png)
 
 Employing the logistic regression model allowed us to construct a confusion matrix, revealing insights into the model's performance. We observed a higher accuracy in predicting true negatives compared to true positives. The combined count of true negatives and true positives constituted a substantial portion of our sample, indicating a satisfactory predictive capability.
