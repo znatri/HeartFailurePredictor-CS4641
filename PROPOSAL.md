@@ -80,6 +80,8 @@ In summary, the integration of outlier handling, class imbalance correction, and
 
 ![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
 
+## Logistic Regression
+
 ## Project Timeline
 
 Our expected contribution table is as follows:
