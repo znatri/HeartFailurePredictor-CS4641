@@ -72,6 +72,25 @@ plt.ylabel('Feature')
 plt.title('Logistic Regression - Coefficients')
 plt.show()
 
+# Extracting Precision, Recall, and F1-score
+report_data = classification_report(target_test, target_predict, output_dict=True)
+precision = report_data['weighted avg']['precision']
+recall = report_data['weighted avg']['recall']
+f1_score = report_data['weighted avg']['f1-score']
+
+# Creating lists for the metrics and scores
+metrics = ['Accuracy', 'Recall', 'F1-score', 'Precision']
+scores = [accuracy, recall, f1_score, precision]
+
+plt.figure(figsize=(10, 6))
+
+# Plotting the grouped bar plot
+sns.barplot(x=metrics, y=scores, palette='muted')
+plt.ylim(0, 1)
+plt.title('Model Metrics')
+plt.ylabel('Score')
+plt.show()
+
 plt.figure(figsize=(8, 6))
 plt.scatter(range(len(target_test)), target_test, color='blue', label='True Values', alpha=0.5)
 plt.scatter(range(len(target_predict)), target_predict, color='red', label='Predictions', alpha=0.5)
