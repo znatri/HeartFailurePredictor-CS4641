@@ -83,7 +83,7 @@ Naive Bayes is another machine learning models we chose for predicting heart fai
 ![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
 
 ## Logistic Regression
-![Confusion Matrix](https://imgur.com/gallery/xM3hD6U.png)
+![Confusion Matrix](https://i.imgur.com/gallery/XLazO4L.png)
 
 ## Project Timeline
 
