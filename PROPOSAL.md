@@ -90,6 +90,8 @@ Additionally, our dataset size, compared to other datasets, is relatively smalle
 
 ![True Values vs Predictions](https://i.imgur.com/iSicq16.png)
 
+In the above visualization one can see the true values compared to the models predictions. The blue and salmon colored points are values that the model predicted wrong, while the fuchsia points are the correctly predicted points. As one can see there are more fuchsia points in the 0 value, this shows that the model predicts true negatives better than true positives.
+
 ### Logistic Regression
 
 Logistic Regression, a widely adopted supervised learning algorithm, is employed for predicting outcomes, including the likelihood of heart failure. Unlike Naive Bayes, which leverages Bayes' Theorem, Logistic Regression utilizes the logistic function to model probabilities within a binary outcome. In our case, whether a patient is at risk of heart failure or not. Efficient and interpretable, Logistic Regression handles a moderate number of features, making it well-suited for real-time predictions and situations where understanding the impact of individual features on the outcome is essential.
