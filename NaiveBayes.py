@@ -51,3 +51,19 @@ sns.barplot(x=['Accuracy'], y=[accuracy], palette='viridis')
 plt.ylim(0, 1)
 plt.title('Model Accuracy')
 plt.show()
+
+# Extracting Precision, Recall, and F1-score
+report_data = classification_report(target_test, target_predict, output_dict=True)
+precision = report_data['weighted avg']['precision']
+recall = report_data['weighted avg']['recall']
+f1_score = report_data['weighted avg']['f1-score']
+
+# Precision, Recall, and F1-score Visualization
+labels = ['Precision', 'Recall', 'F1-score']
+scores = [precision, recall, f1_score]
+
+plt.figure(figsize=(8, 6))
+sns.barplot(x=labels, y=scores, palette='muted')
+plt.ylim(0, 1)
+plt.title('Precision, Recall, and F1-score')
+plt.show()
