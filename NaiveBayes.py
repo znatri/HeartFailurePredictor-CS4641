@@ -46,11 +46,7 @@ plt.title('Confusion Matrix')
 plt.show()
 
 # Accuracy Visualization
-plt.figure(figsize=(6, 4))
-sns.barplot(x=['Accuracy'], y=[accuracy], palette='viridis')
-plt.ylim(0, 1)
-plt.title('Model Accuracy')
-plt.show()
+plt.figure(figsize=(12, 6))
 
 # Extracting Precision, Recall, and F1-score
 report_data = classification_report(target_test, target_predict, output_dict=True)
@@ -58,14 +54,17 @@ precision = report_data['weighted avg']['precision']
 recall = report_data['weighted avg']['recall']
 f1_score = report_data['weighted avg']['f1-score']
 
-# Precision, Recall, and F1-score Visualization
-labels = ['Precision', 'Recall', 'F1-score']
-scores = [precision, recall, f1_score]
+# Creating lists for the metrics and scores
+metrics = ['Accuracy', 'Recall', 'F1-score', 'Precision']
+scores = [accuracy, recall, f1_score, precision]
 
-plt.figure(figsize=(8, 6))
-sns.barplot(x=labels, y=scores, palette='muted')
+plt.figure(figsize=(10, 6))
+
+# Plotting the grouped bar plot
+sns.barplot(x=metrics, y=scores, palette='muted')
 plt.ylim(0, 1)
-plt.title('Precision, Recall, and F1-score')
+plt.title('Model Metrics')
+plt.ylabel('Score')
 plt.show()
 
 # Scatter Plot for True Values and Predictions
