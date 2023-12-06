@@ -15,19 +15,34 @@ There is a personal element to this project as well; many of our team members ha
 
 ## Problem Definition
 
-Early forays into machine learning solutions for heart disease have become popular as a result of hardware and deep learning advances [2]. But we believe they do not go far enough. Underlying factors such as diabetes, blood enzyme content, and blood pressure can serve as an effective indicator of the potential for heart disease in one’s future. We intend to explore all of these options throughout the course of this project, first focusing on the contents of this dataset: https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data/data
+Early forays into machine learning solutions for heart disease have become popular as a result of hardware and deep learning advances [2]. But we believe they do not go far enough. Underlying factors such as diabetes, blood enzyme content, and blood pressure can serve as an effective indicator of the potential for heart disease in one’s future. We intend to explore all of these options throughout the course of this project, first focusing on the contents of this dataset: https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data/data.
+This dataset contains 13 features that can be used to predict mortality by heart failure. The features are as follows:
+- age: Age of the patient (years)
+- anaemia: Decrease of red blood cells or hemoglobin (boolean)
+- creatinine_phosphokinase: Level of the CPK enzyme in the blood (mcg/L)
+- diabetes: If the patient has diabetes (boolean)
+- ejection_fraction: Percentage of blood leaving the heart at each contraction (percentage)
+- high_blood_pressure: If the patient has hypertension (boolean)
+- platelets: Platelets in the blood (kiloplatelets/mL)
+- serum_creatinine: Level of serum creatinine in the blood (mg/dL)
+- serum_sodium: Level of serum sodium in the blood (mEq/L)
+- sex: Woman or man (binary)
+- smoking: If the patient smokes or not (boolean)
+- time: Follow-up period (days)
+- DEATH_EVENT: If the patient deceased during the follow-up period (boolean)
+
 
 ## Methods
 
-We plan to use a number of supervised and unsupervised Machine Learning algorithms in order to achieve this, namely Decision Trees, Random Forest, Support Vector Machines, Logistic Regression, and Naive Bayes. Python’s `scikit-learn` library offers robust implementations of these, thus giving us opportunities in exploring more of the machine learning/data science side of this problem.
+We plan to use a number of supervised and unsupervised Machine Learning algorithms in order to achieve this, namely Random Forest, Support Vector Machines, Logistic Regression, and Naive Bayes. Python’s `scikit-learn` library offers robust implementations of these, thus giving us opportunities in exploring more of the machine learning/data science side of this problem.
 
 ## Results
 
 As far as results, we were focusing on Accuracy and Precision as our two key metrics.
 
-In our initial data pre-processing phase, we employed the `StandardScaler` from the scikit-learn library to standardize the features in our dataset. Standardization involves transforming the data such that it has a mean of 0 and a standard deviation of 1. This step is crucial, especially when working with the random forest algorithm, which is sensitive to the scale of input features.
+In our initial data pre-processing phase, we employed the `StandardScaler` from the scikit-learn library to standardize the features in our dataset. Standardization involves transforming the data such that it has a mean of 0 and a standard deviation of 1. This step is crucial, especially when working with models like Support Vector Machines and Logisitc Regression, which are sensitive to the scale of input features.
 
-To assess the performance of our model, we partitioned our dataset into two subsets: 85% for training and 15% for testing. This division ensures that the model is trained on a majority of the data, allowing it to learn patterns and relationships. The remaining 15% is reserved for testing, providing an independent dataset to evaluate how well the model generalizes to new, unseen data. This approach helps us gauge the model's performance on real-world scenarios beyond the training set, allowing for a more robust assessment of its predictive capabilities.
+To assess the performance of our model, we partitioned our dataset into two subsets: 85% for training and 15% for testing. This division ensures that the models are trained on a majority of the data, allowing it to learn patterns and relationships. The remaining 15% is reserved for testing, providing an independent dataset to evaluate how well the model generalizes to new, unseen data. This approach helps us gauge the models' performances on real-world scenarios beyond the training set, allowing for a more robust assessment of their predictive capabilities.
 
 ![Feature Importance](https://i.imgur.com/h7toqm5.png)
 
@@ -36,6 +51,8 @@ Based on the insights derived from the 'Feature Importance Bar Chart,' it is evi
 In comparison, other critical indicators such as 'serum creatinine' contribute around 15%, while factors like 'ejection fraction' and 'age' each hold a 12% importance. Notably, all remaining features exhibit an importance value of less than or equal to 10%.
 
 The interpretation of these findings suggest that patients with more frequent doctor visits, indicated by shorter durations in the 'Time' variable, are at a heightened risk of experiencing heart failure. This observation aligns with the intuitive notion that individuals with a history of recurrent hospitalizations and persistent critical heart conditions may face an elevated susceptibility to heart failure. The emphasis placed on the temporal aspect ('Time') underscores the significance of consistent medical monitoring and underscores the potential correlation between shorter follow-up periods and increased risk of heart-related complications.
+
+### Random Forest Classifier
 
 ![Confusion Matrix](https://i.imgur.com/Wzgr8d6.png)
 
@@ -60,13 +77,13 @@ Recognizing the potential bias introduced by imbalanced classes, we utilized the
 ### Hyperparameter Tuning
 We employed GridSearchCV for systematic hyperparameter tuning of our RandomForestClassifier. This method rigorously searched through combinations of parameters, allowing us to identify the optimal configuration for our model. The best parameters identified were: n_estimators, max_depth, and min_samples_split. This fine-tuning played a pivotal role in enhancing the model's predictive accuracy.
 
-With these additional preprocessing steps, we observed a notable improvement in our model's performance. The accuracy increased from approximately 80% to around 87%, Peaking at about 90%. This jump in accuracy underscores the effectiveness of our preprocessing enhancements.
+With these additional preprocessing steps, we observed a notable improvement in our model's performance. The accuracy increased from approximately 80% to around 93%, Peaking at about 95%. This jump in accuracy underscores the effectiveness of our preprocessing enhancements.
 
-![Updated Random Forest Classifier - Accuracy Trends](https://i.imgur.com/nKZJHJN.png)
+![Updated Random Forest Classifier - Accuracy Trends](https://i.imgur.com/Fx2r7K7.png)
 
 The updated accuracy trends graph further illustrates the impact of our preprocessing strategies. The graph depicts a consistent improvement in both training and testing accuracy, demonstrating the model's robustness and ability to generalize.
 
-![Updated Confusion Matrix](https://i.imgur.com/SwnzMAQ.png)
+![Updated Confusion Matrix](https://i.imgur.com/IRaK5Xr.png)
 
 The new confusion matrix provides a clearer picture of the model's predictive capabilities. Compared to our initial results, we observed a more balanced distribution of true positives and negatives, along with a reduction in false positives and negatives. This balance is indicative of the model's improved sensitivity and specificity, crucial for reliable heart failure prediction.
 
@@ -74,7 +91,7 @@ In summary, the integration of outlier handling, class imbalance correction, and
 
 ### Naive Bayes
 
-Naive Bayes is another machine learning models we chose for predicting heart failure. As a supervised learning algorithm, Naive Bayes operates on the principles of Bayes Theorem to classify data based on the probability of certain events occurring given prior knowledge. Naive Bayes assumes independence among features, which is not very common in real world scenarios, especially heart failures. Despite this oversimplified assumption, Naive Bayes is particularly good at handling a large number of features relative to the dataset size and is computationally efficient, making it suitable for real-time predictions.
+Naive Bayes is another machine learning model we chose for predicting heart failure. As a supervised learning algorithm, Naive Bayes operates on the principles of Bayes Theorem to classify data based on the probability of certain events occurring given prior knowledge. Naive Bayes assumes independence among features, which is not very common in real world scenarios, especially heart failures. Despite this oversimplified assumption, Naive Bayes is particularly good at handling a large number of features relative to the dataset size and is computationally efficient, making it suitable for real-time predictions.
 
 ![Naive Bayes Confusion Matrix](https://i.imgur.com/znNMKMn.png) 
 
