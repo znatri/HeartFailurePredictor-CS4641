@@ -101,10 +101,17 @@ plt.imshow(confusion_mat, interpolation='nearest', cmap=plt.cm.Blues)
 plt.title('Confusion Matrix')
 plt.colorbar()
 tick_marks = np.arange(len(labels))
-plt.xticks(tick_marks, labels)
+plt.xticks(tick_marks, labels, rotation=45)
 plt.yticks(tick_marks, labels)
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
+
+for i in range(len(labels)):
+    for j in range(len(labels)):
+        plt.text(j, i, confusion_mat[i, j], horizontalalignment='center', verticalalignment='center'
+                 , color='white' if confusion_mat[i, j] > confusion_mat.max() / 2 else 'black')
+
+plt.tight_layout()
 plt.show()
 
 
